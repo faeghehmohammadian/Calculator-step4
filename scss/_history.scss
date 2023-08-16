@@ -1,0 +1,73 @@
+.history{
+    grid-area: history;
+    display: flex;
+    flex-direction: column;
+        .hisbtn{
+            float: left;
+            width: 70px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 3px 3px 15px;
+            border: none;
+        &:hover{
+            text-decoration:  underline 5px;
+            text-decoration-color:var(--btncolor-color);
+            text-underline-offset: 0.5em
+        }
+        
+    }
+    .history-item-box{
+        height: 90vh;
+        .HisItem{
+            text-align: end;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+            width: 90%;
+            .deletebtnforitem{
+                width : fit-content;
+                height :20px;
+                text-align: center;
+                float: left;
+                margin: 10px;
+                border-radius: 5px;
+            &:hover{
+                background-color: var(--btn-hover);
+            }}
+            .memorysmallbtn{
+                width :fit-content;
+                height :30px;
+                text-align: center;
+                float: left;
+                padding: 3px;
+                margin-right: 1px;
+                border-radius: 5px;
+            &:hover{
+                background-color: var(--btn-hover);
+            }}
+        &:hover{
+            background-color:var(--btn-hover);
+        }
+    }
+    }
+    .tashiconrow{
+        display: flex;
+        align-content: flex-end;
+        align-self: flex-end;
+        width: 30px;
+        height: 35px;
+        border-radius: var(--radius-btns);
+        .trashicon{
+            background: url("Trash.png")  no-repeat; 
+            width: 25px;
+            height: 30px;
+            background-size: 95%;
+            margin: 5px;
+            &:hover{
+                background-color: var(--btn-hover);
+            }
+        }
+    }
+}

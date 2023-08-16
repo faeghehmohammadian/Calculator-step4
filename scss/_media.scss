@@ -1,0 +1,39 @@
+@media only screen and (max-width: 600px) {
+    .container{
+        overflow: auto;
+        grid-template-columns:minmax(300px,100%);
+        grid-template-areas:
+        'header'
+        'result'
+        'buttons';
+    }
+    .history{
+        display: none;
+    }
+    .result{
+        .historyiconmin{
+            visibility: visible;
+    }
+}
+}
+@media only screen and (max-width: 1024px),screen and (max-height:450px){
+    .button.hide{
+        display: none;
+    }
+    .button.button{
+        width: 24.5%;
+        height: 16.2%;
+    }
+    .four{
+        order: -4;
+    }
+    .three{
+        order: -3;
+    }
+    .two{
+        order: -2;
+    }
+    .one{
+        order: -1;
+    }
+}

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url("//db.onlinewebfonts.com/t/623c7118249e082fe87a78e08506cb4b.eot");
+    
+}
+*{
+    margin: 0;
+    overflow: hidden;
+    font-family: "Segoe UI";
+    background: var(--main-bgcolor);
+    font-family: var(--font-family);
+    color: var(--text-coler);
+}
+.container{
+    width:100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 4.5% 30.5% 65%;
+    grid-template-areas:
+    'header header'
+    'result history'
+    'buttons history';
+}
