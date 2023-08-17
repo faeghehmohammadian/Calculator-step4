@@ -2,21 +2,21 @@ const themeBtn = document.querySelector(".menu");
 let themeCounter = 0;
 let themeStylesheet = document.getElementById("theme-stylesheet");
 changeTheme();
-export function changeTheme() {
+function changeTheme() {
     switch (themeCounter) {
         //black ⇩
         case 0:
-            themeStylesheet.href = "../scss/themes/maintheme.css"
+            themeStylesheet.href = "./scss/themes/maintheme.css"
             break;
         //white ⇩
         case 1:
-            themeStylesheet.href = "../scss/themes/greentheme.css"
+            themeStylesheet.href = "./scss/themes/greentheme.css"
             break;
         case 2:
-            themeStylesheet.href = "../scss/themes/bluetheme.css"
+            themeStylesheet.href = "./scss/themes/bluetheme.css"
             break;
         case 3:
-            themeStylesheet.href = "../scss/themes/mytheme.css"
+            themeStylesheet.href = "./scss/themes/mytheme.css"
             break;
     }
 }

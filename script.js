@@ -400,7 +400,7 @@ const memoryListItems= document.querySelector(".memoryitems");
 const historybtn = document.getElementById('historyselect');
 const memorybtn = document.getElementById('memoryselect');
 const historylist = document.querySelector(".historyitems");
-const deleteBtn = document.querySelector(".trashicon");
+const deleteBtn = document.querySelector(".tashiconrow");
 
 let historyItems = [];
 let Id = 0;
