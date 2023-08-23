@@ -1,8 +1,14 @@
+@mixin hov{
+    &:hover{
+        background-color: var(--btn-hover);
+    }
+}
 .buttons{
     grid-area: buttons;
     display: flex;
     flex-wrap: wrap;
     .button{
+        @include hov;
         background-color: var(--btn-color);
         width: 19.5%;
         height: 19.5%;
@@ -14,9 +20,7 @@
             &.color{
                 background-color:var(--btncolor-color);
             
-                &:hover{
-                    background-color: var(--btn-hover);
-                }
+                @include hov;
             }
             &.btn{
                 font-size: 18px;
@@ -31,8 +35,6 @@
             .radical:hover{
                 background-color: var(--btn-hover);
             }
-        &:hover{
-            background-color: var(--btn-hover) ;
-        }
+        
     }
 }
